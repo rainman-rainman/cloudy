@@ -1,10 +1,12 @@
-import asyncio
-import discord,yt_dlp,pafy
+import discord,yt_dlp,pafy,os
+from os.path import join, dirname
+from dotenv import load_dotenv, find_dotenv
 from discord.ext import commands
 client=commands.Bot(command_prefix='/',intents=discord.Intents.all())
 currentURL=""
 playlist_urls=[]
 ######################################[ UTIL ]#########################################
+load_dotenv(find_dotenv())
 def youTubeUrlToTitle(url):
     video_object=pafy.new(url)
     video_title=video_object.title
@@ -147,5 +149,5 @@ async def embed(ctx):
     embed.set_footer(text="Learn more here: realdrewdata.medium.com")
     await ctx.send(embed=embed)
 ######################################[ AUTH ]#########################################
-client.run('TOKEN')
+client.run(os.environ.get("TOKEN"))
 ######################################[  ]#########################################f
