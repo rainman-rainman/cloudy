@@ -13,9 +13,7 @@ def nextURL():
     return playlist_urls[0]
 async def after(self, ctx):
     if not self.queue.empty() and not ctx.voice_client.is_playing():
-        # logger.info("looping start")
         await pplay(ctx)
-        # logger.info("looping end")
 ######################################[ DC COMMANDS ]#########################################
 @client.command()
 async def join(ctx):
