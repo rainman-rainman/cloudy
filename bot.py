@@ -1,5 +1,5 @@
-import discord,yt_dlp,pafy,os
-from dotenv import load_dotenv, find_dotenv
+import discord,yt_dlp,pafy,os,asyncio
+from dotenv import load_dotenv,find_dotenv
 from discord.ext import commands
 client=commands.Bot(command_prefix='/',intents=discord.Intents.all())
 currentURL=""
@@ -12,7 +12,7 @@ def youTubeUrlToTitle(url):
     return video_title
 def nextURL():
     return playlist_urls[0]
-async def after(self, ctx):
+async def after(self,ctx):
     if not self.queue.empty() and not ctx.voice_client.is_playing():
         await pplay(ctx)
 ######################################[ DC COMMANDS ]#########################################
@@ -57,7 +57,7 @@ async def play(ctx,url):
         'before_options':'-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
         'options':'-vn',
     }
-    ydl_opts = {
+    ydl_opts={
         'format':'bestaudio/best',
         'extractaudio':True,
         'audioformat':'mp3',
@@ -94,4 +94,4 @@ async def resume(ctx):
     await ctx.send("Resuming...")
 ######################################[ AUTH ]#########################################
 client.run(os.environ.get("TOKEN"))
-######################################[  ]#########################################f
+######################################[ EOF ]#########################################f
