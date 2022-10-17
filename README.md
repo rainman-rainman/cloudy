@@ -15,7 +15,7 @@ An opensource Discord bot written in Python3.
 - This bot depends on a valid .env configuration file which contains configuration parameters such as the Discord Application Token.
   <br> 🕵️ **Information contained in this file is sensitive by nature and may not be disclosed.** 🕵️
   <br> Make sure to set the right access and visibility permissions for this sensitive file. 
-  The syntax for this file and some sensible defaults can be derived from the .env.example file. 
+  <br> The syntax for this file and some sensible defaults can be **derived from the .env.example file.** 
 
 ### Installation of Python3 dependencies
 
