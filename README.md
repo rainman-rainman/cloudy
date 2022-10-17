@@ -5,7 +5,6 @@ An opensource Discord bot written in Python3.
 ## Setup & Installation 🚀
 <br>
 ### Requirements
-<br>
 - Python3 version: `>=3.10.x`
 - Generate a **token with all intents & administrator permissions enabled**.<br>If you're lost, the following resources might help:
     - https://www.youtube.com/watch?v=aI4OmIbkJH8
