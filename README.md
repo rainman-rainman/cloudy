@@ -20,4 +20,4 @@ An opensource Discord bot written in Python3.
 ### Installation of Python3 dependencies
 
 Install the required Python3 packages using pip3:
-`pip3 install discord.py python-dotenv yt-dlp youtube-dl pafy os asyncio`
+<br> `pip3 install discord.py python-dotenv yt-dlp youtube-dl pafy os asyncio`
