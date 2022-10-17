@@ -1,9 +1,9 @@
 # Cloudy 🌧️
 Welcome to Cloudy!
 An opensource Discord bot written in Python3.
-<br>
+
 ## Setup & Installation 🚀
-<br>
+
 ### Requirements
 - Python3 version: `>=3.10.x`
 - Generate a **token with all intents & administrator permissions enabled**.<br>If you're lost, the following resources might help:
@@ -16,6 +16,7 @@ An opensource Discord bot written in Python3.
   <br> Make sure to set the right access and visibility permissions for this sensitive file. 
   <br> The syntax for this file and some sensible defaults can be **derived from the .env.example file.**
 <br>
+
 ### Installation of Python3 dependencies
 <br>
 Install the required Python3 packages using pip3:
