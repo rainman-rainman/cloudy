@@ -12,7 +12,10 @@ An opensource Discord bot written in Python3.
     - https://dpp.dev/creating-a-bot-application.html
     - https://discordpy.readthedocs.io/en/stable/intents.html
 - This bot uses discords official API and the provided python3 module.<br>See https://discordpy.readthedocs.io/en/stable/api.html for more information on how to use discords API.
-- This bot depends on a valid .env configuration file which contains configuration parameters such as the Discord Application Token. 🕵️Information contained in this file is sensitive by nature and may not be disclosed🕵️. Make sure to set the right access and visibility permissions for this sensitive file. The syntax for this file and some sensible defaults can be derived from the .env.example file. 
+- This bot depends on a valid .env configuration file which contains configuration parameters such as the Discord Application Token. 
+  🕵️ **Information contained in this file is sensitive by nature and may not be disclosed.** 🕵️
+  Make sure to set the right access and visibility permissions for this sensitive file. 
+  The syntax for this file and some sensible defaults can be derived from the .env.example file. 
 
 ### Installation of Python3 dependencies
 
