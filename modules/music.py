@@ -16,6 +16,6 @@ async def join(ctx):
 @commands.command()
 async def leave(ctx):
     await ctx.voice_client.disconnect()
-def setup(client):
-    client.add_command(join)
-    client.add_command(leave)
+def setup(bot):
+    bot.add_command(join)
+    bot.add_command(leave)
