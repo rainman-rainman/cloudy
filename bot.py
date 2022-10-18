@@ -1,7 +1,7 @@
 import discord,os
 from dotenv import load_dotenv,find_dotenv
 from discord.ext import commands
-bot=commands.Bot(command_prefix='c!',intents=discord.Intents.all())
+bot=commands.Bot(command_prefix='.',intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     print("[SETUP ⚙️ ]: bot is ready to rock & roll 🚀")
