@@ -15,7 +15,8 @@ for filename in os.listdir('./'+modules_dir):
         load(modules_dir+'.'+filename[:-3])
         print(f'[SETUP ⚙️ ]: loaded module {filename[:-3]} from {modules_dir}/{filename} 🚀')
 @bot.event
-async def on_command_error(ctx, error):
-   if isinstance(error, commands.CommandNotFound):
+async def on_command_error(ctx,error):
+   if isinstance(error,commands.CommandNotFound):
      await ctx.send(f'```[ERROR ⚠️ ]: This command does not exist!```\n```{error}```')
+     print(f'```[ERROR ⚠️ ]: This command does not exist!```\n```{error}```')
 bot.run(os.environ.get("TOKEN"))
