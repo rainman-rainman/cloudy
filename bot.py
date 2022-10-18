@@ -7,11 +7,11 @@ async def on_ready():
     print("[SETUP ⚙️ ]: bot is ready to rock & roll 🚀")
 load_dotenv(find_dotenv())
 modules_dir=os.environ.get("MODULES_FOLDER_NAME")
-print(f'[SETUP ⚙️ ]: modules directory name is {modules_dir}.')
+print(f'[SETUP ⚙️ ]: modules directory name is {modules_dir}')
 async def load(extension):
     await bot.load_extension(extension)
 for filename in os.listdir('./'+modules_dir):
     if filename.endswith('.py'):
         load(modules_dir+'.'+filename[:-3])
-        print(f'[SETUP ⚙️ ]: loaded module {filename[:-3]} from {modules_dir} 🚀')
+        print(f'[SETUP ⚙️ ]: loaded module {filename[:-3]} from {modules_dir}/{filename} 🚀')
 bot.run(os.environ.get("TOKEN"))
