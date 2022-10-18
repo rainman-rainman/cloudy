@@ -1,8 +1,9 @@
 import discord,os
 from dotenv import load_dotenv,find_dotenv
 from discord.ext import commands
-client=commands.Bot(command_prefix='.',intents=discord.Intents.all())
+bot=commands.Bot(command_prefix='.',intents=discord.Intents.all())
 load_dotenv(find_dotenv())
-client.load_extension("modules.music")
-client.load_extension("modules.documentation")
-client.run(os.environ.get("TOKEN"))
+bot.load_extension("modules.music",".modules.music")
+bot.load_extension("modules.documentation",".modules.documentation")
+bot.load_extension("modules.moderation",".modules.moderation")
+bot.run(os.environ.get("TOKEN"))
