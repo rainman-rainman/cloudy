@@ -1,8 +1,8 @@
 from discord.ext import commands
 # --EVENTS--
 class Events(commands.Cog):
-  def __init__(self,client):
-    self.client = client
+  def __init__(self,bot):
+    self.bot = bot
   # Bot online event
   @commands.Cog.listener()
   async def on_ready(self):
@@ -17,14 +17,13 @@ class Events(commands.Cog):
     print(f'{member} left the server. :C')
 # --MODERATION--
 class Moderation(commands.Cog):
-
-  def __init__(self,client):
-    self.client=client
+  def __init__(self,bot):
+    self.bot=bot
   # clear command. default 5 messages,can be changed by user.
   @commands.command()
   async def clear(self,ctx,amount=5):
     await ctx.channel.purge(limit=amount+1)
 # Cog Setup
-def setup(client):
-  client.add_cog(Events(client))
-  client.add_cog(Moderation(client))
+def setup(bot):
+  bot.add_cog(Events(bot))
+  bot.add_cog(Moderation(bot))
