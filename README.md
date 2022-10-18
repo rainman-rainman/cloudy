@@ -1,6 +1,8 @@
 # Cloudy 🌧️
 Welcome to Cloudy!
 An opensource Discord bot written in Python3.
+<br>
+<br>[Quick Link to the Project Overview](https://github.com/users/rainman-rainman/projects/1)
 
 ## Setup & Installation 🚀
 
