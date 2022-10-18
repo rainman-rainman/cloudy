@@ -17,6 +17,6 @@ for filename in os.listdir('./'+modules_dir):
 @bot.event
 async def on_command_error(ctx,error):
    if isinstance(error,commands.CommandNotFound):
-     await ctx.send(f'```[ERROR ⚠️ ]: This command does not exist!\n\t{error}```')
-     print(f'```[ERROR ⚠️ ]: This command does not exist!\n\t{error}```')
+     await ctx.send(f'```[ERROR ⚠️ ]:\tThis command does not exist!\n\t\t\t{error}```')
+     print(f'```[ERROR ⚠️ ]:\tThis command does not exist!\n\t\t\t{error}```')
 bot.run(os.environ.get("TOKEN"))
