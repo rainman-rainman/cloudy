@@ -4,7 +4,7 @@ An opensource Discord bot written in Python3.
 <br>
 <br>[Quick Link to the Project Overview](https://github.com/users/rainman-rainman/projects/1)
 <br>
-<br>[Join our Discord to contribute](https://discord.gg/Y8wrDHSM)
+<br>[Join our Discord to contribute](https://discord.gg/C5gwSqPd)
 
 ## Setup & Installation 🚀
 
